@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // MongoDB Connection
-mongoose.connect('mongodb://127.0.0.1:27017/userDB');
+mongoose.connect('mongodb+srv://singhyashika1104:Poonam123@cluster0.36vy8o7.mongodb.net/userDB');
 //mongoose.connect('mongodb://localhost:27017/userDB');
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
